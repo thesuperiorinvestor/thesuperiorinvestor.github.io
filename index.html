@@ -70,6 +70,7 @@
   .card .top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
   .badge { font-size: 12px; font-weight: 700; letter-spacing: .03em; padding: 4px 10px; border-radius: 8px; background: rgba(45,212,191,.12); color: var(--accent); border: 1px solid rgba(45,212,191,.25); }
   .badge.live { background: rgba(52,211,153,.12); color: var(--green); border-color: rgba(52,211,153,.28); }
+  .badge.stat { background: rgba(251,191,36,.13); color: #fbbf24; border-color: rgba(251,191,36,.32); }
   .card h3 { font-size: 21px; letter-spacing: -0.01em; }
   .card p { color: var(--muted); font-size: 15px; margin: 6px 0 16px; }
   .stack { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 20px; }
@@ -149,6 +150,43 @@
           <div class="links">
             <a class="solid" href="https://freedomplanner1.netlify.app/" target="_blank" rel="noopener">Live demo</a>
             <a href="https://github.com/thesuperiorinvestor/freedom-planner" target="_blank" rel="noopener">Code &amp; README</a>
+          </div>
+        </article>
+
+        <!-- Kalshi Edge Dashboard -->
+        <article class="card">
+          <div class="top"><span class="badge stat">$100K+ generated</span></div>
+          <h3>Kalshi Edge Dashboard</h3>
+          <p>A full-stack sports-betting decision engine — the tool behind a six-figure run on Kalshi
+            markets. Ingests PropFinder data across MLB/NBA/WNBA, scores plays through an EV model
+            with staking rules, ranks them Elite→Watch, and logs every bet with ROI analytics. Live
+            Kalshi API integration and a Claude co-pilot.</p>
+          <div class="stack">
+            <span class="chip">Python</span><span class="chip">FastAPI</span>
+            <span class="chip">SQLAlchemy</span><span class="chip">SQLite</span>
+            <span class="chip">Tailwind</span><span class="chip">Kalshi API</span>
+            <span class="chip">Claude API</span>
+          </div>
+          <div class="links">
+            <a class="solid" href="https://github.com/thesuperiorinvestor/kalshi-edge-dashboard" target="_blank" rel="noopener">Code &amp; README</a>
+          </div>
+        </article>
+
+        <!-- Kalshi Speech Tracker -->
+        <article class="card">
+          <div class="top"><span class="badge">Python · Data</span></div>
+          <h3>Kalshi Speech Tracker</h3>
+          <p>A Streamlit analytics tool for Kalshi's speech "mention" markets — betting on how many
+            times a speaker says a given word. Tracks markets and picks against an edge model
+            (historical-lock / contextual-override / structural-fade), separates event formats, and
+            reports honest ROI with Plotly.</p>
+          <div class="stack">
+            <span class="chip">Python</span><span class="chip">Streamlit</span>
+            <span class="chip">pandas</span><span class="chip">Plotly</span>
+            <span class="chip">SQLite</span><span class="chip">OCR</span>
+          </div>
+          <div class="links">
+            <a class="solid" href="https://github.com/thesuperiorinvestor/kalshi-speech-tracker" target="_blank" rel="noopener">Code &amp; README</a>
           </div>
         </article>
 
